@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    --primary-blue: #348feb;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 180px 1fr;
+}
+
+.sidebar{
+    background-color: var(--primary-blue);
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 100px repeat(6, 50px) 50px repeat(3, 50px);
+    gap: 10px;
+    grid-row: span 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar img{
+    justify-self: center;
+}
+
+.sidebar .communities{
+    align-items: flex-start;
+}
+
+.sidebar h1{
+    font-size: 30px;
+}
+
+.dashboard{
+    width: 50px;
+}
+
+.home,
+.profile,
+.messages,
+.history,
+.tasks,
+.communities,
+.settings,
+.support,
+.privacy{
+    width: 25px;
+}
+
+.header{
+    background-color: white;
+}
+
+.content{
+    background-color: #c5c9c6;
+}
