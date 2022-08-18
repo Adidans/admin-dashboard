@@ -55,7 +55,9 @@ body{
 .communities,
 .settings,
 .support,
-.privacy{
+.privacy,
+.search,
+.bell{
     width: 25px;
 }
 
@@ -126,10 +128,14 @@ body{
     border-radius: 7px;
 }
 
+.trending h2{
+    font-size: 20px;
+}
+
 .trending-content{
     background-color: white;
     margin-top: 10px;
-    height: 242px;
+    height: 245px;
     border-radius: 7px;
     display: grid;
     grid-template-columns: 1fr;
@@ -157,4 +163,79 @@ body{
 
 .user p{
     color: gray;
+}
+
+input{
+    width: 500px;
+    height: 25px;
+    border: none;
+    background-color: rgb(241, 241, 241);
+    border-radius: 15px;
+}
+
+.header{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar{
+    display: flex;
+    gap: 10px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-bot{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.header-bot .profile-pic{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+.user-section{
+    display: flex;
+    gap: 20px;
+}
+
+.greeting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.greeting .name{
+    font-size: 20px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+button{
+    border: none;
+    background-color: #348feb;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 20px;
 }
