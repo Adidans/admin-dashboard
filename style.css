@@ -17,14 +17,18 @@ body{
     background-color: var(--primary-blue);
     color: white;
     height: 100vh;
-    padding: 20px;
+    padding: 0px 20px;
     display: grid;
     grid-template-columns: 50px 1fr;
-    grid-template-rows: 100px repeat(6, 50px) 50px repeat(3, 50px);
+    grid-template-rows: 80px repeat(6, 50px) 30px repeat(3, 50px);
     gap: 10px;
     grid-row: span 2;
     align-items: center;
     justify-content: center;
+}
+
+.sidebar h2{
+    font-size: 23px;
 }
 
 .sidebar img{
@@ -60,5 +64,97 @@ body{
 }
 
 .content{
-    background-color: #c5c9c6;
+    background-color: #dce3e4;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    grid-template-rows: 334px 1fr;
+    gap: 20px;
+}
+
+.projects{
+    grid-row: span 2;
+}
+
+.projects h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project p{
+    margin-top: 5px;
+    font-size: 15px;
+    color: gray;
+}
+
+.project{
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 7px;
+    width: 300px;
+    height: 160px;
+}
+
+.projects-content{
+    display: grid;
+    width: 700px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.announcements-content{
+    border-radius: 7px;
+    padding: 20px;
+    background-color: white;
+    height: 250px;
+}
+
+.announcements h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.announcement{
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.trending{
+    height: 320px;
+    border-radius: 7px;
+}
+
+.trending-content{
+    background-color: white;
+    margin-top: 10px;
+    height: 242px;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 40px);
+    gap: 25px;
+    padding: 20px;
+    align-content: center;
+}
+
+.user{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 20px 20px;
+    column-gap: 20px;
+    justify-items: start;
+}
+
+.profile-pic{
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 25px;
+    grid-row: span 2;
+}
+
+.user p{
+    color: gray;
 }
